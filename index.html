@@ -1,123 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Torey | Web Developer</title>
-  <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Road Crossing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amatic+SC" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-	<div class="mynav">
-
-		<ul class="navlinks pull-right">
-
-			<li id="aboutlink"><a href="#">About</a></li>
-
-			<li id="websitelink"><a href="http://www.tor3y.com" target="_blank">Website</a></li>
-			
-			<li id="resumelink"><a href="#">Resume</a></li>
-
-			<li id="contactlink"><a href="#">Contact</a></li>
-
-		</ul>
-	</div>
-		<span id="myname">
-			Torey Mundkowsky
-		</span>
-		<!-- <h3 class="text-center">Web Developer</h3> -->
-
-
-	<div id="main">
-
-		<div id="resume">
-			
-			<div id="myresume">
-
-			   <div class="resumesection">
-			     <a class="resumelink grow mybtnd btnlink movelink" href="http://tor3y.com/TOREY_RESUME.pdf" target="_blank" download>DOWNLOAD RESUME
-			      </a>
-
-			      <!-- <object class="resume" data="http://tor3y.com/T_RESUME.pdf" type="application/pdf" width="100%" height="100%"></object> -->
-
-			      <img src="images/T_RESUME.jpg" alt="Resume">
-			  </div>
-					</div>
-
-				</div>
-
-		<div id="about" class="container text-center">
-			<p class="abouttext">
-			<span class="bigT">T</span>orey Mundkowsky is a web developer with a love of design and an extensive background in professional photography. As the tour photographer for The Killers, Torey traveled to every corner of the globe, capturing the band on their tours for Sam's Town, Day & Age and Battle Born. His images have been published in GQ, Blackbook, NME, Q, Rolling Stone and The London Times. Previously, Torey developed creative content for brands such as Juicy Couture, Philip Lim and Seven For All Mankind. He lives and works in Los Angeles.
-			</p>
-		</div>
-
-	<div id="contact" class="container">
-			
-			<a href="tel:3106225410">310.622.5410</a>
-
-			<br/>
-			
-			<a href="mailto:torey@tor3y.com?Subject=Hello" target="_blank">
-	torey@tor3y.com</a>
-		
-		</div>
-
-	</div>
-
-	<div id="firstscreen" class="logo text-center">
-		<h1 class="pushname">Torey Mundkowsky</h1>
-		<h3>Jr. Web Developer</h3>
-	</div>
-
-	<div class="footerbar text-center">
-
-	<a href="https://twitter.com/Imtorey" taret="_blank"><i class="fa fa-twitter fa-3x"></i></a>
-	<a href="http://instagram.com/imtorey" taret="_blank"><i class="fa fa-instagram fa-3x"></i></a>
-	<a href="http://www.linkedin.com/in/tor3y/" taret="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-	</div>
-</div>
-<script type="text/javascript">
-
-
-	$('#resume').hide();
-	$('#about').hide();
-	$('#contact').hide();
-	$('#myname').hide();
-
-$(window).load(function() {
-
-	$('#myname').click(function() { 
-		$('#about, #contact, #resume, #website').hide();
-		$('#firstname, .footerbar, #myname').show();
-	});
-
-	$('#resumelink').click(function() { 
-		$('#about, #contact, #firstscreen, #website, .footerbar').hide();
-		$('#resume, #myname').show();
-	});
-
-	$('#aboutlink').click(function() {
-		$('#resume, #contact, #firstscreen, #website').hide();
-		$('#about, .footerbar, #myname').show();
-	});
-
-	$('#contactlink').click(function() {
-		$('#about, #resume, #firstscreen, #website').hide();
-		$('#contact,  .footerbar, #myname').show();
-	});
-
-
-});
-
-
-</script>
-
-
+	<header>Road Crossing</header>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <footer>Use arrow keys to move player</footer>
 </body>
 </html>
